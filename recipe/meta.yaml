@@ -1,4 +1,4 @@
-{% set version = '0.2.1' %}
+{% set version = "0.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggrastr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggrastr/ggrastr_{{ version }}.tar.gz
-  sha256: 605c898a38d783b36d880626cbc43bea18991ff9bd8bccb101472da147403736
+  sha256: 0760c4b8a298ae54d435cc4d8207dbe4f12723b0fca12e199c566929f4ff5541
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -46,13 +46,10 @@ test:
 about:
   home: https://github.com/VPetukhov/ggrastr
   license: MIT
-  summary: Provides a set of geoms to rasterize only specific layers of the plot while simultaneously
-    keeping all labels and text in vector format. This allows users to keep plots within
-    the reasonable size limit without loosing vector properties of the scale-sensitive
-    information.
+  summary: Provides a set of geoms to rasterize only specific layers of the plot while simultaneously keeping all labels and text in vector format. This allows users to keep plots within the reasonable size limit without loosing vector properties of the scale-sensitive information.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
