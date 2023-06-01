@@ -1,11 +1,11 @@
-About r-ggrastr
-===============
+About r-ggrastr-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggrastr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/VPetukhov/ggrastr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggrastr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides a set of geoms to rasterize only specific layers of the plot while simultaneously keeping all labels and text in vector format. This allows users to keep plots within the reasonable size limit without loosing vector properties of the scale-sensitive information.
 
