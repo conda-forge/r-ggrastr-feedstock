@@ -1,6 +1,5 @@
 {% set version = "1.0.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ggrastr
@@ -13,8 +12,7 @@ source:
   sha256: cb27406dca99cea6440adf6edb7eb53141b60322452f5a5d4409e36516ad20d1
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
