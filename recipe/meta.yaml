@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggrastr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggrastr/ggrastr_{{ version }}.tar.gz
-  sha256: cb27406dca99cea6440adf6edb7eb53141b60322452f5a5d4409e36516ad20d1
+  sha256: abec7e12b228eaa8999a3728b6cadf48a93d3a1cf81e5df804d64751408610bb
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
